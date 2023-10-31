@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ConverThor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <script src="ConverThorScript.js"></script>
+
+        <p>Consistency:</p>
+        <label for="liquidChoice">Liquid</label>
+        <input type="radio" name="densityType" id="liquidChoice">
+        <label for="solidChoice">Solid</label>
+        <input type="radio" name="densityType" id="solidChoice"> <br> <br>
+
+        <label for="fromConversionInput">Recipe amount: </label> <br>
+        <input type="text" id="fromConversionInput"> 
+        <label id="gramsLabel" >grams</label>
+        <label id="mlLabel">ml</label> <br> <br> 
+
+        <div id="ingredientDiv">
+            <label for="flourChoice" id="ingredientLabel">Ingredient:</label><br>
+            <label for="flourChoice" id="flourtLabel">Flour</label>
+            <input type="radio" name="ingredientType" id="flourChoice">
+            <label for="sugarChoice" id="sugarLabel">Sugar</label>
+            <input type="radio" name="ingredientType" id="sugarChoice"> 
+            <label for="butterChoice" id="butterLabel">Butter</label>
+            <input type="radio" name="ingredientType" id="butterChoice">
+            <label for="yeastChoice" id="yeastLabel">Yeast</label>
+            <input type="radio" name="ingredientType" id="yeastChoice"> 
+        </div>
+
+        <p style="font-size: 14px;"> To: </p>
+        <div id="toConversionRadioDiv">
+            <label for="bottlecapBtn">Bottle Cap (regular, not reccomended for solids)</label>
+            <input type="radio" name="toConversionRadio" id="bottlecapBtn" style="height: 8px;"> <br>
+            <label for="shotglassBtn">Shot Glass (40ml)</label>
+            <input type="radio" name="toConversionRadio" id="shotglassBtn" style="height: 8px;"> <br>
+            <label for="plasticcupBtn">Plastic cup (200ml)</label>
+            <input type="radio" name="toConversionRadio" id="plasticcupBtn" style="height: 8px;"> <br>
+            <button id="calculateBtn">Calculate</button>
+        </div>
+        <p id="resultParagraph">Result: </p>
+    </body>
+</html>

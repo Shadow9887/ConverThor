@@ -1,3 +1,58 @@
+body {
+    background-color: #333; 
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+}
+
+p, label, button {
+    text-shadow: 1px 1px 2px #000; 
+}
+
+p {
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="radio"], input[type="button"] {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #000; 
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    color: #000;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0e8a3e; 
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #888; 
+}
+
+button:hover {
+    background-color: #1a2c1e; 
+}
+
+#ingredientDiv {
+    margin-top: 10px;
+}
+
 #toConversionRadioDiv {
+    margin-top: 10px;
     font-size: 10px;
 }
+
+#resultParagraph {
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+
